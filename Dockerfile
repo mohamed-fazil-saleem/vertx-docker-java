@@ -3,5 +3,5 @@ RUN apt-get update && apt-get install git maven -y
 RUN mkdir /app
 WORKDIR /app
 COPY ./spring-examples /app
-RUN chmod +x start.sh
-CMD ["/app/start.sh"]
+RUN chmod +x /app/start.sh
+CMD ["./start.sh"]
